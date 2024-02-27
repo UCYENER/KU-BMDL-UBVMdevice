@@ -1,0 +1,36 @@
+
+{
+    "COMMENT": "fitting_alg: spherical or ellipsoid, BUT ellipsoid does not work properly.",
+
+    "general":{
+        "export_folder": "python exports", 
+        "center_frequency_Hz": 2.25e6, 
+        "bandpass_cutoffs" : [1.25e6, 3.25e6],
+        "bandpass_order" : 3,
+        "x_index_range_for_fitting": [0,20],
+        "y_index_range_for_fitting": [0,20],
+        "are_limits_set_correctly": true,
+        "fitting_alg" : "spherical"}, 
+
+        
+    
+    "spherical": {
+        "map_file": "data\\spherical\\spherical_UMSmap.txt",
+        "raw_file": "data\\spherical\\spherical",
+        "anterior_limits" : [12e-6, 36e-6],
+        "posterior_limits" : [125e-6, 150e-6]},
+
+    "ellipsoid": {
+        "map_file": "data\\ellipsoid\\ellipsoid_UMSmap.txt",
+        "raw_file": "data\\ellipsoid\\ellipsoid",
+        "anterior_limits" : [20e-6, 40e-6],
+        "posterior_limits" : [125e-6, 150e-6]},
+
+    "conical": {
+        "map_file": "data\\conical\\conical_UMSmap.txt",
+        "raw_file": "data\\conical\\conical",
+        "anterior_limits" : [10e-6, 66e-6],
+        "posterior_limits" : [124e-6, 230e-6]}
+    
+
+}
